@@ -23,6 +23,10 @@ pub fn run (config: Config) -> Result<(), Box<dyn Error>> {
     Ok(())
 }
 
+fn search<'a>(query: &str, contents: &'a str) -> Vec<&'a str> {
+    vec![]
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
